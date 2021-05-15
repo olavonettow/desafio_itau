@@ -1,0 +1,97 @@
+body{
+    font-family: 'Open Sans',sans-serif;
+    background-color:rgb(214, 214, 214);
+    text-align: center;
+
+}
+.titulo{
+    color: rgb(54, 54, 54);
+
+}
+.form{
+    width: 70%;
+    max-width: 600px;
+    min-width: 420px;
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 5px 5px 15px rgb(180, 180, 180);
+
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+}
+.campos{
+    margin: 5px 0px;
+    font-size: 15px;
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 5px;
+    padding: 10px;
+    transition: .3s;
+}
+.campos:hover{
+    box-shadow: 0px 0px 10px rgb(180, 180, 180);
+}
+.botao{
+    margin: 5px 0;
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(59, 59, 255);
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+.botao:hover{
+    background-color: rgb(49, 49, 228);
+    box-shadow: 2px 2px 10px rgb(124, 124, 124);
+
+}
+.botao:disabled{
+    background-color: rgb(148, 148, 148);
+    cursor: not-allowed;
+}
+#sexo{
+    margin: 5px 0;
+    font-size: 15px;
+    padding: 10px;
+    transition: .3s;
+    border: 1px solid rgb(172, 172, 172);
+    margin-left: 10px;
+    border-radius: 5px;
+}
+#sexo:hover{
+    box-shadow: 0px 0px 10px rgb(180, 180, 180);
+
+}
+.caixa{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    color: rgb(83, 83, 83);
+
+}
+#rg{
+    width: 65%;
+
+}
+hr{
+    width: 100%;
+    margin-top: 25px;
+
+}
+.form h3{
+    color: rgb(83, 83, 83);
+}
+#mensagem{
+    color: rgb(139, 00, 00);
+    font-weight: bold;
+    font-size: 15px;
+    display: none;
+    text-align: left;
+    margin-top: -2px;
+}

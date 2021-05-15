@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio Cadastro Pessoal</title>
+</head>
+<body>
+<h1 class="titulo">Desafio Cadastro Pessoal</h1>
+<div class="form">
+    <h3>Insira seus dados pessoais abaixo</h3>
+    <form id="formulario">
+        <input type="text" required id="nome" class="campos" placeholder="Nome:">
+        <input type="text" required id="cpf" onchange="campocpf()" class="campos" pattern="[0-9]{11}" placeholder="CPF:(digite apenas os 11 numeros do seu CPF)">
+        <p id="mensagem">cpf invalido</p>
+        <div class="caixa">        
+            <input type="text" id="rg" pattern="[0-9]{5,}" class="campos" placeholder="RG:(digite apenas numeros do seu RG)">
+            <div>
+                <label for="sexo"> Sexo:</label>
+                <select name="sexo" id="sexo">
+                    <option selected disabled>-</option>
+                    <option value="feminino">F</option>
+                    <option value="masculino">M</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <h3>Endereço</h3>
+        <input type="text" id="rua" required class="campos" placeholder="Rua:">
+        <input type="text" id="numero" required class="campos" placeholder="Número:">
+        <input type="text" id="bairro" class="campos" placeholder="Bairro:">
+        <input type="text" id="cidade" class="campos" placeholder="Cidade:">
+        <input type="text" id="estado" class="campos" placeholder="Estado:">
+        <input type="text" id="cep" pattern="[0-9]{8}" class="campos" placeholder="Cep:(digite os 8 numeros do seu cep)">
+        <input type="text" id="telefone" pattern="[0-9]{10}" class="campos" placeholder="Telefone:(digite apenas numeros com ddd)">
+        <input type="text" id="celular" required pattern="[0-9]{11}" class="campos" placeholder="Celular:(digite apenas numeros com ddd)">
+        <button type="submit" onclick="enviar()" class="botao" id="botao">Cadastrar</button>
+    </form>
+</div>
+
+    
+</body>
+<script src="script.js"></script>
+</html>
