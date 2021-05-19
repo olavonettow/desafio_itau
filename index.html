@@ -30,10 +30,10 @@
         <h3>Endereço</h3>
         <input type="text" id="rua" required class="campos" placeholder="Rua:">
         <input type="text" id="numero" required class="campos" placeholder="Número:">
-        <input type="text" id="bairro" class="campos" placeholder="Bairro:">
-        <input type="text" id="cidade" class="campos" placeholder="Cidade:">
-        <input type="text" id="estado" class="campos" placeholder="Estado:">
-        <input type="text" id="cep" pattern="[0-9]{8}" class="campos" placeholder="Cep:(digite os 8 numeros do seu cep)">
+        <input type="text" id="bairro" required class="campos" placeholder="Bairro:">
+        <input type="text" id="cidade" required class="campos" placeholder="Cidade:">
+        <input type="text" id="estado" required class="campos" placeholder="Estado:">
+        <input type="text" id="cep" pattern="[0-9]{8}" required class="campos" placeholder="Cep:(digite os 8 numeros do seu cep)">
         <input type="text" id="telefone" pattern="[0-9]{10}" class="campos" placeholder="Telefone:(digite apenas numeros com ddd)">
         <input type="text" id="celular" required pattern="[0-9]{11}" class="campos" placeholder="Celular:(digite apenas numeros com ddd)">
         <button type="submit" onclick="enviar()" class="botao" id="botao">Cadastrar</button>
