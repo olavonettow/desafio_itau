@@ -1,11 +1,11 @@
 body{
     font-family: 'Open Sans',sans-serif;
-    background-image: linear-gradient(white, rgb(122, 132, 163), white);
+    background-image: linear-gradient(silver, white, silver);
     text-align: center;
 
 }
 .titulo{
-    color: rgb(54, 54, 54);
+    color: rgb(83, 83, 83);
 
 }
 .form{
@@ -16,7 +16,7 @@ body{
     margin: auto;
     background-color: white;
     border-radius: 18px;
-    box-shadow: 5px 5px 15px rgb(180, 180, 180);
+    box-shadow: 10px 10px 15px rgb(180, 180, 180);
 
 }
 .form form{
